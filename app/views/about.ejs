@@ -1,0 +1,41 @@
+<!--
+File name:about.ejs
+Student Name: Pallavi Mishra,
+StudentID: 301294886
+Date: September 30
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <%- include("partials/header"); %>
+</header>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="/css/images/pallavi.jpg" alt="Pallavi">
+            <div class="about-text">
+                <p>
+                    Hello! My name is Pallavi Mishra, a passionate Software Engineering Technician student with a focus on creating amazing websites.
+                    I have a strong background in front-end and back-end development, and I'm constantly learning and staying updated with the latest web technologies.
+                    With a keen eye for design and a knack for problem-solving, I enjoy turning ideas into functional and visually appealing websites and web applications.
+                    When I'm not coding, you can find me exploring new technologies, hiking in the great outdoors, or sipping on a cup of coffee while sketching out new project ideas.
+                </p>
+                <a href="/css/images/resumenew (1).pdf" download="Pallavi_Mishra_Resume.pdf" class="btn">Download Resume (PDF)</a>
+
+                <a href="/projects" class="btn">Projects</a>
+            </div>
+        </div>
+    </section>
+    
+    <%- include("partials/footer"); %>
+</body>
+</html>

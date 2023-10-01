@@ -1,0 +1,45 @@
+<!--
+File name:projects.ejs
+Student Name: Pallavi Mishra,
+StudentID: 301294886
+Date: September 30
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+       <!-- Header Section -->
+    <header>
+        <%- include("partials/header"); %>
+    </header>
+    <div class="projects">
+        <h2>My Projects</h2>
+        
+        <div class="project-card">
+            <img class="project-image" src="/css/images/pic1.png" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>This is the portfolio project which I created as an assignment for my Software Engineering Technician Program , second semester. I created this project using HTML & CSS.</p>
+        </div>
+        <div class="project-card">
+            <img class="project-image" src="/css/images/pic2.png" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>This is my second project, it's a bug smasher game. I used HTML, CSS and JavaScript for this project.</p>
+        </div>
+        <div class="project-card">
+            <img class="project-image" src="/css/images/pic3.png" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>The third project is Interactive slide show. I created this project using HTML, CSS & JavaScript</p>
+            <!-- Link to Services Page -->
+            <a href="/services" class="btn">Services</a>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <%- include("partials/footer"); %>
+</body>
+</html>

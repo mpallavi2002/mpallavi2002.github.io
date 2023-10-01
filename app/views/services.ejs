@@ -1,0 +1,49 @@
+<!--
+File name:services.ejs
+Student Name: Pallavi Mishra,
+StudentID: 301294886
+Date: September 30
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+     <!-- Header Section -->
+    <header>
+        <%- include("partials/header"); %>
+    </header>
+    <div class="services">
+        <h2>My Services</h2>
+        
+        <div class="service-card">
+            <img src="/css/images/web-development.jpg" alt="Service 1">
+            <h3>Web development</h3>
+             <!-- Description of the first service -->
+            <p>I'm learning web development in my Software Engineering technician program , and I'd love to assist you in making an awesome website. I'll ensure it appears awesome on all kinds of devices like phones, tablets, and computers. If you ever plan to sell things online, I can create a really cool online store for you. I'm skilled at making websites both beautiful and secure, so they not only look good but also work flawlessly. I'll also help people find your site on the internet, and I'm here to support you whenever you need it. Let's team up to bring your online ideas to life!</p>
+        </div>
+
+        <div class="service-card">
+            <img src="/css/images/cprog.webp" alt="Service 2">
+            <h3>C, C++, C#</h3>
+             <!-- Description of the second service -->
+            <p>I'm on a journey to learn C, C++, and C# programming, and I'm excited to assist you in creating efficient and versatile software. C is a powerful language with applications ranging from building operating systems to games. With C++, you get flexibility and speed, making it perfect for various tasks. As for C#, it's a modern and user-friendly language suitable for desktop, web, and mobile applications. Whether you're interested in system programming, game development, or crafting user-friendly apps, I'm here to guide you through the world of these languages. Let's collaborate to build some amazing software together</p>
+        </div>
+        
+        <div class="service-card">
+            <img src="/css/images/mysql.webp" alt="Service 3">
+            <h3>Mysql</h3>
+             <!-- Description of the third service -->
+            <p>I'm also learning SQL, which is like a special language for working with databases. With SQL, you can organize and find information in databases. Whether you need to sort data, get useful facts, or create apps that use data, I'm here to help you understand SQL and make the most of your data</p>
+            <a href="/contact" class="btn">Contact</a>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <%- include("partials/footer"); %>
+</body>
+</html>

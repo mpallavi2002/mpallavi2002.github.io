@@ -1,0 +1,55 @@
+<!--
+File name:contact.ejs
+Student Name: Pallavi Mishra,
+StudentID: 301294886
+Date: September 30
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+    
+</head>
+<body>
+    <header>
+        <%- include("partials/header"); %>
+    </header>
+    <section id="contact">
+        <h2>Contact Me</h2>
+       
+        <form action="/" method="post">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Contact Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <a href="/home" class="btn">Submit</a>
+            </div>
+        </form>
+    </section>
+    
+   
+    <%- include("partials/footer"); %>
+</body>
+</html>
